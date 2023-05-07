@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css"> 
+    <link rel="shortcut icon" href="./imagenes/logo.svg" type="image/x-icon"> 
+</head>
+<body>  
+        <header>
+            <div class="contenedor">
+                <img class="logo" src="./imagenes/logo.svg" alt="logo alura"> 
+                <h1 class="titulo_logo">Encriptador</h1>
+            </div> 
+        </header>
+    <main>
+            <div class="contenedor">
+                <div class="encriptador">
+
+                    <form class="encriptador_form">
+                        <div class="texto_en_area">
+                            <textarea 
+                            name="texto" 
+                            id="texto" 
+                            placeholder="Escribe el texto aqui."></textarea>
+                            <div class="texto_info">
+                                <div class="info">
+                                    <img src="./imagenes/exclamacion.svg ">
+                                    <p id="advertencia">Sugerencia: Use letras minúsculas y sin acentos. </p>                             
+                                </div>
+                            </div>
+
+                            <div class="btn">
+                                <button id="encri" class="btn_encriptar" type="button"><img src="./imagenes/candadoC.svg"> Encriptar </button>
+                                <button id="desencri" class="btn_desencriptar" type="button"><img src="./imagenes/candadoA.svg"> Desencriptar </button>
+                            </div>
+                        </div>
+                    </form>
+
+                    <div class="resultado">
+                        <div class="contenedor_resultado">
+                            <div class="contenedor_no_resuelto" id="noResuelto">
+                                <div class="imagen_resultado">
+                                <img src="./imagenes/muñeco.png" alt="img muñeco">
+                                </div>
+                                <p>Ningun mensaje encontrado</p>
+                                <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+                                </div>
+                                <div class="contenido_resuelto" id = "resuelto">
+                                    <textarea name="texto_resultado" id="textoResultado" disabled></textarea>
+                                    <button id="copiar" type="button"><img src="./imagenes/copiado.svg"> Copiar</button>
+                            </div>
+
+                        </div>
+                  
+                    </div>
+
+                </div>
+
+            </div>
+
+    </main> 
+
+        <footer>
+            <p class="copyright">© Creado por Carlos Carballo <!--<a href=" " target="_blank" rel="noopener noreferrer">Carlos Carballo</a>--></p>
+        </footer> 
+
+       <!-- <div class="wrapper">
+            <ul>
+                <li class="facebook"><a href="#"><i class="fa fa-facebook fa-2x"aria-hiddent="true"></i></a></li>
+                <li class="facebook"><a href="#"><i class="fa fa-facebook fa-2x"aria-hiddent="true"></i></a></li>
+                <li class="facebook"><a href="#"><i class="fa fa-facebook fa-2x"aria-hiddent="true"></i></a></li>
+                <li class="facebook"><a href="#"><i class="fa fa-facebook fa-2x"aria-hiddent="true"></i></a></li>
+                
+            </ul>
+        </div> -->
+
+        <script src="./script.js"></script> 
+      
+</body> 
+</html>
